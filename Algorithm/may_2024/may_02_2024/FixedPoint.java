@@ -8,7 +8,7 @@ For example, given [-6, 0, 2, 40], you should return 2. Given [1, 5, 7, 8], you 
 
 public class FixedPoint {
 
-    public void checkFixedPoint(int[] arr){
+    public void checkForFixedPoint(int[] arr){
         int fixedPoint = IntStream.range(0, arr.length)
                 .filter(i -> arr[i] == i)
                 .findFirst()
